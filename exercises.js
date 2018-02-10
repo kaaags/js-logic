@@ -124,8 +124,6 @@ console.log(mustBeTrue(true));
 function bigBird(word){
 	if(word.length === 3){
 		return "Word to Big Bird!";
-	}else{
-		return
 	}
 }
 
@@ -144,6 +142,16 @@ console.log(bigBird("yes"));
  * Console.log your result.
 */
 
+function isEqual(first, second){
+	if(first.length === second.length){
+		return "You look mahvelous!";
+	}else{
+		return "I don't know who you are anymore.";
+	}
+}
+
+
+console.log(isEqual("ab", "at"));
 
 /*
  * #7
@@ -158,6 +166,15 @@ console.log(bigBird("yes"));
  * Console.log your result.
 */
 
+function notEqual(first, second){
+	if(first.length !== second.length){
+		return "Opposites do attract.";
+	}else{
+		return "Cause it's like you're my mirror.";
+	}
+}
+
+console.log(notEqual("I do", "I don't"));
 
 /*
  * #8
