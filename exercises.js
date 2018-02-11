@@ -223,7 +223,7 @@ function dirty30(one, two, three){
 	}
 }
 
-console.log(dirty30(1, 2, 27));
+console.log(dirty30(1, 2, 28));
 
 /*
  * #10
@@ -237,8 +237,15 @@ console.log(dirty30(1, 2, 27));
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+	if(num % 2 === 0){
+		return true;
+	}else{
+		return false;
+	}
+}
 
-
+console.log(evenStevens(2));
 
 /*
  * #11
