@@ -262,9 +262,9 @@ console.log(evenStevens(2));
 
 function daClub(cover, age){
 	if(cover >= 21 && age >= 21){
-		return "Welcome to the Legends Lounge";
+		return "Welcome to the Legends Lounge.";
 	}else{
-		return "Chuck E Cheese is across the street";
+		return "Chuck E Cheese is across the street.";
 	}
 }
 
@@ -283,7 +283,15 @@ console.log(daClub(21, 21));
  * Console.log your result.
 */ 
 
+function graduation(credit, thesis){
+	if(credit >= 120 || thesis === true){
+		return "Congratulations on a job well done.";
+	}else{
+		return "See you in summer school.";
+	}
+}
 
+console.log(graduation(120, true));
 
 /*
  * #13
@@ -295,8 +303,23 @@ console.log(daClub(21, 21));
  *
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
-*/ 
+*/
 
+function moneyTrain(speed){
+	if(speed < 50){
+		return "You are riding Honolulu's Rail.";
+	}else{
+		if(speed < 100){
+			return "You are riding an Amtrak.";
+		}else{
+			if(speed >= 100){
+				return "Now you ballin' in the Shinkansen!";
+			}
+		}
+	}
+}
+
+console.log(moneyTrain(100));
 
 /*
  * #14
