@@ -367,7 +367,36 @@ console.log("DoughnutBought:", doughnutBought);
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
 
+var specialItem = ["loco moco", "roast pork", "beef stew", "chicken katsu", "cold ginger chicken"];
 
+// //function DailySpecials(special){
+// 	for(var i=0; i<special.length; i ++){
+// 		console.log(special[i]);
+// 	}
+// }
+
+// console.log(DailySpecials(specialItem));
+
+function dailySpecials(special){
+	switch(special){
+		case "Sunday":
+			return "veggie omelette";
+		case "Monday":
+			return "loco moco";
+		case "Tuesday":
+			return "roast pork";
+		case "Wednesday":
+			return "beef stew";
+		case "Thursday":
+			return "chicken katsu";
+		case "Friday":
+			return "cold ginger chicken";
+		case "Saturday":
+			return "buffalo wings";
+	}
+}
+
+console.log(dailySpecials("Sunday"));
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -384,6 +413,7 @@ var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
 for (var i = 0; i<toyotaModels.length; i++){
    console.log("Toyota " + toyotaModels[i]);
 }
+
 
 
 /* 
