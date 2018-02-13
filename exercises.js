@@ -367,16 +367,6 @@ console.log("DoughnutBought:", doughnutBought);
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
 
-var specialItem = ["loco moco", "roast pork", "beef stew", "chicken katsu", "cold ginger chicken"];
-
-// //function DailySpecials(special){
-// 	for(var i=0; i<special.length; i ++){
-// 		console.log(special[i]);
-// 	}
-// }
-
-// console.log(DailySpecials(specialItem));
-
 function dailySpecials(special){
 	switch(special){
 		case "Sunday":
@@ -426,6 +416,11 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+var announcer = ["Player 1", "Player 2", "Player 3", "Player 4", "Player 5"];
+
+for (var i = 0; i < announcer.length; i++){
+	console.log("Ready!", announcer[i]);
+}
 
 /* 
  * #16
@@ -433,6 +428,9 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+for (var i = 0; i < myFavFoods.length; i++){
+	console.log(myFavFoods[i]);
+}
 
 /*
  * #17
