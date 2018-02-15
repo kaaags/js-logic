@@ -506,6 +506,20 @@ console.log(west);
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+var subwaysSpecial = [];
+
+function subways(special){
+	console.log(subOftheDay);
+	for(i = 0; i < special.length; i++){
+		if(i % 2 === 0){
+		}else{
+			subwaysSpecial.splice(i, 1, "Classic Tuna");
+		}
+	}
+}
+
+subways(subOftheDay);
+console.log(subwaysSpecial);
 
 /*
 Final Boss
@@ -520,16 +534,15 @@ Final Boss
 */
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
- 
-  
-  
+var customPhrase = "";
 
+function removeLetter(str){
+	console.log(phrase);
+	customPhrase.slice(0, 1).toUpperCase();
+	for(i = 1; i < str.length; i++){
+		customPhrase.slice(phrase.charAt(i),phrase.charAt(i)+1);
+	}
+}
 
-
-
-
-
-
-
-
-
+removeLetter(phrase);
+console.log(customPhrase);
