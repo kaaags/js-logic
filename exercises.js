@@ -1,3 +1,4 @@
+
 /*
 If statements - Evaluates (or checks) a condition. If the condition is true, any statements in the subsequent code block are executed
 */
@@ -426,7 +427,7 @@ for (var i = 0; i < announcer.length; i++){
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
-  var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
+var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
 for (var i = 0; i < myFavFoods.length; i++){
 	console.log(myFavFoods[i]);
@@ -447,7 +448,18 @@ for (var i = 0; i < myFavFoods.length; i++){
  * Console.log your result.
 */
 
+var numArray = [10, 20, 30, 40, 50];
 
+function sumItUp(arr){
+	var total = 0;
+	for (var i = 0; i < numArray.length; i++){
+		console.log(arr[i]);
+		total += arr[i];
+	}
+	return total;
+}
+
+console.log(sumItUp(numArray));
 
 /*
  * #18
